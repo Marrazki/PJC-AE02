@@ -35949,6 +35949,7 @@ GameObject:
   - component: {fileID: 689731289}
   - component: {fileID: 689731293}
   - component: {fileID: 689731294}
+  - component: {fileID: 689731295}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -36106,6 +36107,19 @@ MonoBehaviour:
   m_DefaultActionMap: Movimiento
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &689731295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689731288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badbb5ed0c0560a4497561efe92ab9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovimiento
+  speed: 5
 --- !u!1001 &689745986
 PrefabInstance:
   m_ObjectHideFlags: 0
