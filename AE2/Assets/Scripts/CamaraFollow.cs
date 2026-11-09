@@ -14,6 +14,21 @@ public class CamaraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+    void LateUpdate()
+    {
+        // Posición deseada
+        Vector3 posicionDeseada = player.position + distanciaCamara;
+
+        // Movimiento suave
+        transform.position = Vector3.Lerp(
+            transform.position,
+            posicionDeseada,
+            suavidad * Time.deltaTime
+        );
+
+        // Mirar al jugador
         transform.LookAt(player);
     }
 }

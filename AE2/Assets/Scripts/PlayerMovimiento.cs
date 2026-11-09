@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovimiento : MonoBehaviour
 {
     public float speed = 5f;
+    public float jump = 5f;
     private Vector2 movement;
     private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,5 +27,14 @@ public class PlayerMovimiento : MonoBehaviour
     void OnMoveMando(InputValue value)
     {
         movement = value.Get<Vector2>();
+    }
+    void OnMoveTeclado(InputValue value)
+    {
+        movement = -value.Get<Vector2>();
+    }
+    void OnJumpTeclado(InputValue value)
+    {
+        Debug.Log("PEIO");
+        rb.AddForce(0, jump * 100, 0);
     }
 }
