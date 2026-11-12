@@ -4,6 +4,8 @@ public class CamaraFollow : MonoBehaviour
 {
     public Transform player;
     Vector3 distanciaCamara;
+    public float suavidad = 3f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
